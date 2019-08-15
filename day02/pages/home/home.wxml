@@ -1,0 +1,163 @@
+<!--pages/home/home.wxml-->
+
+<image mode="widthFix" src="{{movies[1].img}}" style="width:300rpx"></image>
+<view>电影名：{{movies[1].name}}</view>
+<view>英⽂名：{{movies[1].englishname}}</view>
+<view>发⾏地：{{movies[1].country}}</view>
+<view>发⾏年份：{{movies[1].year}}</view>
+<view>简述：{{movies[1].desc}}</view>
+
+<image mode="widthFix" src="{{movie.img}}" style="width:300rpx"></image>
+<view>电影名：{{movie.name}}</view>
+<view>英⽂名：{{movie.englishname}}</view>
+<view>国家：{{movie.country}}</view>
+<view>发⾏年份：{{movie.year}}</view>
+<view>简述：{{movie.desc}}</view>
+
+<view>⾖瓣电影排名第2、最重要的主演演员名：</view>
+<view>{{movies[1].actor[0].name}}</view>
+
+<view>{{username}}，您已登录，欢迎</view>
+<navigator id="item-{{id}}" class="{{itemclass}}" url="{{itemurl}}">
+  <image style="width: {{imagewidth}}" mode="{{imagemode}}" src="{{imagesrc}}"></image>
+</navigator>
+
+<view>两个数字Number相加：{{love1 + forever1}}</view>
+<view>两个字符串String相加：{{love2 + forever2}}</view>
+
+<view>互联⽹快讯</view>
+<view>{{newstitle[0]}}</view>
+
+<view class="page__bd" id="news-list">
+  <view class="weui-panel__bd">
+    <navigator url="" class="news-item" hover-class="weui-cell_active">
+      <view class="news-img">
+        <image mode="widthFix" class="" src="https://img.36krcdn.com/20190810/v2_1565404308155_img_000" />
+      </view>
+      <view class="news-desc">
+        <view class="weui-media-box__title">⼩程序可以在 PC 端微信打开 了</view>
+        <view class="weui-media-box__desc">
+          微信开始测试「PC 端⽀持打开 ⼩程序」的新能⼒，⽤户终于不⽤在电脑上收到⼩程序时望⼿机兴叹。
+        </view>
+        <view class="weui-media-box__info">
+          <view class="weui-media-box__info__meta">深圳</view>
+          <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">8⽉9⽇</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+<view class="page__bd">
+  <view class="weui-article">
+    <view class="weui-article__h1">HackWork技术工坊</view>
+    <view class="weui-article__section">
+      <view class="weui-article__p">
+        HackWork技术工坊是技术普及的活动，致力于以有趣的形式让参与者学到有用的技术。任务式实战、系统指导以及社区学习能有效提高技术小白学习技术的效率及热情。
+      </view>
+      <view class="weui-article__section">
+        <view class="weui-article__h3">任务式实战</view>
+        <view class="weui-article__p">
+          每节都会有非常明确的学习任务，会引导你循序渐进地通过实战来掌握各个知识点。只有动手做过的技术才是自己的。
+        </view>
+        <view class="weui-article__p">
+          <image class="weui-article__img" src="https://hackweek.oss-cn-shanghai.aliyuncs.com/hw18/hackwork/weapp/img1.jpg" mode="aspectFit" style="height: 180px" />
+        </view>
+        <view class="weui-article__h3">系统指导</view>
+        <view class="weui-article__p">
+          针对所有学习问题我们都会耐心解答，我们会提供详细的学习文档，对大家的学习进行系统指导。
+        </view>
+        <view class="weui-article__p">
+          <image class="weui-article__img" src="https://hackweek.oss-cn-shanghai.aliyuncs.com/hw18/hackwork/weapp/img2.jpg" mode="aspectFit" style="height: 180px" />
+        </view>
+        <view class="weui-article__h3 hw__h3">社区学习</view>
+        <view class="weui-article__p">
+          参与活动即加入了我们的技术社区，我们会长期提供教学指导，不必担心学不会，也不用担心没有一起学习的伙伴。
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view id="wxmlinfo">
+  <view class="content">
+    <view class="title">WXML 模板</view>
+    <view class="desc">从事过⽹⻚编程的⼈知道，⽹⻚编程采⽤的是 HTML + CSS + JS 这样的组合，其中 HTML 是⽤来描述当前这个⻚⾯的结构，CSS ⽤来描述⻚⾯的样⼦，JS 通 常是⽤来处理这个⻚⾯和⽤户的交互。
+    </view>
+  </view>
+</view>
+<view id="studyweapp">
+  <view class="content">
+    <view class="header">
+      <view class="title">技术学习说明</view>
+      <view class="desc">技术和我们以往所接触的⼀些知识有很⼤的不同，⽐如英⽂ ⾮常强调词汇量，需要你多说多背；数学需要你记住公式，反复练习；在教学的⽅式上也有很⼤的不 同，以前都是有专⻔的⽼师⼿把⼿教你，⽽且还有同学交流。那要学好技术，应该依循什么样的学习⽅法和教学⽅法呢？
+      </view>
+    </view>
+    <view class="lists">
+      <view class="item">
+        <view class="item-title">⾃学⽽⾮⼿把⼿</view>
+        <view class="item-desc">技术的⽅向众多，⽽且知识点也是⾮常庞杂， 需要你具备⼀定的⾃学能⼒，所谓⾃学能⼒就是要求你遇到问题能够勤于思考，擅于搜索，能够不断 实践探索。在实际⼯作中，也要求你能根据技术⽂档可以迅速掌握前沿的技术，⽽同事不会有时间教 你，如果没有⾃学能⼒，是很难胜任很多⼯作的。
+        </view>
+      </view>
+      <view class="item">
+        <view class="item-title">查阅⽂档⽽⾮死记知识点</view>
+        <view class="item-desc">在⾼中⼀学期⼀⻔课只有很薄的⼀本书，⽼师 会反复讲解知识点，强化你的记忆，考试也是闭卷；⽽技术⼀个很⼩的分⽀，内容就有⼏千⻚甚⾄更 多，强记知识点显然不合适。学习技术要像查词典⼀样来查阅技术⽂档，你只需要掌握基本的语法和 ⽤法，在编程的时候随时查阅，就像你不需要背诵上万的单词也能知道它的意思⽤法⼀样，所以技术 ⽂档是学习技术最为重要的参考资料。
+        </view>
+      </view>
+      <view class="item">
+        <view class="item-title">实战⽽⾮不动⼿的看书</view>
+        <view class="item-desc">技术是最强调结果的技能，你看了再多书，如 果不知道技术成品是怎么写出来的，都是枉然。很多朋友有收集癖，下载了很多电⼦资源，收藏了很 多⾼赞的技术⽂章，但是却没有动⼿去消化去理解，把时间和精⼒都浪费了。不动⼿在开发者⼯具⾥ 去写代码，不动⼿配置开发环境，缺乏实战的经验，都是阻碍你学好技术的坏习惯。
+        </view>             </view>
+      <view class="item">
+        <view class="item-title">搜索⽽⾮做伸⼿党</view>
+        <view class="item-desc">在以前，我们遇到技术问题，我们可以问⽼师 问同学，于是很多⼈把这种不良的习惯也带到了技术的学习当中，遇到问题也总喜欢求助于别⼈。技 术的⽅向众多，环境复杂，问题也是很多，如果你总是依赖别⼈的解答，是很难学好技术的。⼀定要 学会在⽹上通过搜索遇到的问题来找答案。
+        </view>
+      </view>
+      <view class="item">
+        <view class="item-title">团队协作，⽽⾮单打独⽃</view>
+        <view class="item-desc">⼀个产品涉及的技术⾮常多，需要很多⼈来⼀ 起配合才能开发好，所以学习技术的时候我们需要了解⼀些代码规范、⼯作的流程、项⽬管理等，在 技术⽅⾯也会有API接⼝，接⼝⽂档这些，还要懂得如何和同职业的同事以及不同⻆⾊的⼈如设计师等 ⼀起配合，⽽不是⾃⼰⼀个⼈单打独⽃。
+        </view>
+      </view>
+      <view class="item">
+        <view class="item-title">系统的指导⽽⾮茫然⽆序</view>
+        <view class="item-desc">学好技术最依赖你⾃学，但是如果没有⼈指导 你，你可能会像苍蝇⼀样陷⼊众多资料中茫然⽆序，抓不住⼀个技术的重点，也不清楚哪些技术才值得你深⼊学习，最好是有经验的⼈可以指点你应该看什么，学什么，什么才是重点，当然不是⼿把⼿教你。
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="index-link">
+  <!-- <navigator url="./../home/imgshow/imgshow" class="item-link">让⼩程序显示图⽚</navigator> -->
+  <navigator url="/pages/home/imgshow/imgshow" class="item-link">让⼩程序显示图⽚</navigator>
+</view>
+<view class="event-list">
+  <navigator url="/pages/home/imgshow/imgshow" class="event-link">
+    <view class="event-img">
+      <image mode="widthFix" src="https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/weapp.jpg"></image>
+    </view>
+    <view class="event-content">
+      <view class="event-title">零基础学会⼩程序开发</view>
+      <view class="event-desc">通过两天集中的学习，你会循序渐进的开发出⼀些 具有实际应⽤场景的⼩程序。 </view>
+      <view class="event-box">
+        <view class="event-address">深圳南⼭</view>
+        <view class="event-time">2018年9⽉22⽇-23⽇</view>
+      </view>
+    </view>
+  </navigator>
+</view>
+
+<view class="flex-box">
+  <view class="list-item">Python</view>
+  <view class="list-item">小程序</view>
+  <view class="list-item">网站建设</view>
+  <view class="list-item">HTML5</view>
+</view>
+
+<view class="weui-flex">
+  <view class="weui-flex__item">
+    <view class="placeholder">weui</view>
+  </view>
+  <view class="weui-flex__item">
+    <view class="placeholder">weui</view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/transition/transition",
+    "pages/transform/transform",
+    "pages/filter/filter",
+    "pages/gradient/gradient",
+    "pages/home/imgshow/imgshow",
+    "pages/list/list",
+    "pages/partner/partner",
+    "pages/more/more"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1772cb",
+    "navigationBarTitleText": "小程序开发技术工坊",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#13227a",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "⾸⻚"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/partner/partner",
+        "text": "伙伴"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

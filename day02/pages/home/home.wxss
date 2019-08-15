@@ -1,0 +1,131 @@
+/* pages/home/home.wxss */
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #c60;
+  border-left: 3px solid #c60;
+  padding-left: 15px;
+}
+
+.title, .item-title {
+  margin-bottom: 0.9em;
+}
+
+.desc, .item-desc {
+  color: #333;
+}
+
+#wxmlinfo, #studyweapp {
+  font-size: 16px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+#wxmlinfo, #studyweapp {
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+
+.item-link {
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #4ea6ec;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#wxmlinfo {
+  background-color: #dae7d9;
+}
+
+#studyweapp {
+  background-image: url(https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.event-list {
+  background-color: #fafbfc;
+  padding: 20px 0;
+}
+
+.event-link {
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5rpx 8rpx 10rpx rgba(53, 178, 225, 0.26);
+  overflow: hidden;
+}
+
+.event-img image {
+  width: 100%;
+}
+
+.event-content {
+  padding: 25rpx;
+}
+
+.event-title {
+  line-height: 1.7em;
+}
+
+.event-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5em;
+  font-weight: 200;
+}
+
+.event-box {
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.event-address, .event-time {
+  float: left;
+  color: #cecece;
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #82c2f7;
+  height: 100px;
+  text-align: center;
+  border: 1px solid #bdd2f8;
+}
+
+.hw__h3 {
+  color: #1772cb;
+}
+
+#news-list .news-item {
+  margin: 15rpx;
+  padding: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+#news-list .news-img image {
+  width: 100%;
+}
+
+#news-list .news-desc {
+  width: 100%;
+}
