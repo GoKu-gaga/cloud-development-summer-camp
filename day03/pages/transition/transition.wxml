@@ -1,0 +1,20 @@
+<!--pages/transition/transition.wxml-->
+<view class="shake-box">
+  <text>shake案例</text>
+  <view class="animatebox shake"></view>
+</view>
+
+<view class="transition-display">
+  <text>将⿏标或⼿指悬停在盒⼦上查看动画之后放开。</text>
+  <view class="box bg-color" hover-class="bg-color-hover"></view>
+</view>
+
+<view>
+  <text>盒⼦的多个属性⼀起动画: width, height, background-color, transform. 将⿏标或⼿指悬停在盒⼦上查看动画之后放开。</text>
+  <view class="animatebox" hover-class="animatebox-hover"></view>
+</view>
+
+<view class="fadeIn">
+  <view>注意会有⼀个⽆限颜⾊渐变变化的动画</view>
+  <image mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg"></image>
+</view>
