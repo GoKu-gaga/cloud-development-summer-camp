@@ -1,0 +1,21 @@
+<!--pages/home/imgshow/imgshow.wxml-->
+<button bindtap="navigateBack">返回上⼀⻚</button>
+
+<view id="imgsection">
+  <view class="title">⼩程序显示图⽚</view>
+  <view class="imglist">
+    <image class="imgicon" src="https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/weapp.jpg"></image>
+  </view>
+</view>
+
+<view class="imglist">
+  <image class="imgitem" src="https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/weapp.jpg"></image>
+</view>
+
+<view class="imglist">
+  <image class="img" mode="widthFix" src="https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/weapp.jpg"></image>
+</view>
+
+<view class="imglist">
+  <image class="circle" mode="widthFix" src="https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/logo.jpg"></image>
+</view>

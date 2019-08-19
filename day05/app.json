@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/tapevent/tapevent",
+    "pages/filter/filter",
+    "pages/transition/transition",
+    "pages/transform/transform",
+    "pages/gradient/gradient",
+    "pages/home/imgshow/imgshow",
+    "pages/list/list",
+    "pages/partner/partner",
+    "pages/more/more"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1772cb",
+    "navigationBarTitleText": "HackWork技术⼯坊",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#1772cb"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#13227a",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "⾸⻚"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/partner/partner",
+        "text": "伙伴"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
