@@ -1,0 +1,42 @@
+<!--pages/data/data.wxml-->
+<view class="weui-navbar">
+  <block wx:for="{{tabs}}" wx:key="index">
+    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+      <view class="weui-navbar__title">{{item}}</view>
+    </view>
+  </block>
+</view>
+<view class="weui-tab__panel">
+  <view hidden="{{activeIndex != 0}}">帝都</view>
+  <view hidden="{{activeIndex != 1}}">魔都</view>
+  <view hidden="{{activeIndex != 2}}">妖都</view>
+  <view hidden="{{activeIndex != 3}}">渔村</view>
+</view>
+
+<text>{{text}}</text>
+<button bindtap="addLine">新增⼀⾏</button>
+<button bindtap="removeLine">删掉最后⼀⾏</button>
+
+<video id="daxueVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+  autoplay loop muted="{{muted}}" initial-time="100" controls event-model="bubble">
+</video>
+<button bindtap="changeMuted">静⾳和取消静⾳</button>
+
+<view style="background-color:{{bgcolor}};width:400rpx;height:300rpx;"></view>
+<button bindtap="redTap">让背景变红</button>
+<button bindtap="yellowTap">让背景变⻩</button>
+
+<view>"云开发技术训练营"第5个字符 {{charat}}</view>
+<view>两个字符串连接后的结果：{{concat}}</view>
+<view>CloudBase Camp字⺟⼤写：{{uppercase}}</view>
+<view>b的绝对值：{{abs}}</view>
+<view>x的y次幂：{{pow}}</view>
+<view>返回a是正还是负：{{sign}}</view>
+<view>now对象：{{now}}</view>
+<view>{{fullyear}}年</view>
+<view>{{date}}⽇</view>
+<view>星期{{day}}</view>
+<view>{{hours}}时</view>
+<view>{{minutes}}分</view>
+<view>{{seconds}}秒</view>
+<view>1970年1⽉1⽇⾄今的毫秒数：{{time}}</view>
